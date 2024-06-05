@@ -1,2 +1,2 @@
 # Myusic
- respositório destinado aos estudos práticos de html-css-javascript
+ Repositório destinado aos estudos práticos de html-css-javascript
