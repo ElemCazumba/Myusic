@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+body{
+  background-image: linear-gradient(to bottom, rgb(31, 111, 185), rgb(255, 255, 255), white);
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-attachment: fixed;
+}
+div{
+    top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+img{
+    
+    width: 30%;
+    height: 30%;
+}
