@@ -1,61 +1,82 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@font-face {
-  font-family: Gladis;
-  src: url('Gladiola.otf') format(opentype), url('Gladiola.ttf') format(truetype);
-}
+
 body{
-  background-image: linear-gradient(to bottom, rgb(31, 111, 185), rgb(255, 255, 255), white);
-  width: 100%;
+  width: 60%;
+  margin: auto;
+  box-shadow:3px 3px 7px 3px#f1ede9;
+  
+}
+
+header > section#arealogo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div#divarealogo{
+  display: flex;
+  align-items: center;
+}
+
+input{
+  margin-left: auto;
+  margin-right:auto;
+  width: 50%;
+  height: 2%;
+}
+
+div#divarealogo > p#plogo{
+  color: rgb(3, 3, 63);
+  font-weight: bolder;
+  font-size: xx-large;
+  margin-right: 20px;
   padding: 0px;
-  margin: 0px;
-  background-attachment: fixed;
 }
-h1{
-  font-family: Gladis, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bolder;
-  font-size: 2.5em;
-  text-align: center;
-}
-p{
-  font-size: 1.3em;
-  padding: 30px;
-  font-family: 'Work Sans','Indie Flower','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bolder;
-  text-decoration: line-through;
-  font-style: italic;
-}
-p#paragrafo-principal{
-  font-family: 'Courier New', Courier, monospace;
+
+p#logincabecalho > a{
   text-decoration: none;
+  color: rgba(2, 63, 132, 0.858);
+  font-weight: 400;
+  font-size: medium;
+  margin-left: 20px;
+  padding: 0px;
 }
 
-ul{
-  font-size: 1.1em;
-  
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-align: center;
-  
+p#logincabecalho > a:hover{
+ color: chocolate;
 }
-a{
-  color: chartreuse;
+
+nav{
+  height: 25px;
+  align-items: end;
+  background-color: rgb(2 63 132 / 54%);
+  text-align: end;
+  align-content: center;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px  rgba(2, 34, 72, 0.386);
+}
+nav > a{
   text-decoration: none;
+  color: rgb(246, 247, 252);
+  padding: 3px;
+  margin: 2px;
 }
 
-a:visited {
-  color: rgb(29, 24, 18);
-  text-decoration: underline;
+nav>a:hover{
+  color: #f1cba2;
+  background-color: rgba(2, 63, 132, 0.578);
+  border-radius: 5px;
 }
-div{
-    top: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+main{
+  margin-top:15px;
+  margin-bottom: 15px;
 }
-img{
-    
-    width: 30%;
-    height: 30%;
+img#imglogo{
+  width: 100px;
+  height: 100px;
+  
 }
 
+p#logincabecalho{
+  margin-right: 30px;
+}
