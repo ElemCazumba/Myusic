@@ -5,7 +5,7 @@
 cor1 - #F25E6B
 cor2 - #063966
 cor3 - #098ACC
-cor4 - #F2EDDC
+cor4 - #FDF8E5;
 cor5 - #F27F1B
 
 fonte titulo - (google fonts)Quicksand  / space grotesk / rowdies e Spicy Rice
@@ -16,54 +16,89 @@ fonte paragrafos - Rubik / Nunito e Outfit
 :root{
   --corprincipal:#063966;
   --corsecundária:#098ACC;
+  --brancologo:#fdf8e5;
+  --cordestaque:#F25E6B;
 }
 *{
   padding: 0;
   margin: 0;
 }
+body{
+  max-width: 1000px;
+  min-width: 300px;
+  margin: auto;
+  background-color: #ffffff;
+}
 
 header{
   background-color: var(--corprincipal);
   display: flex;
-  justify-content: center;  /* Center horizontally */
+  justify-content: space-between;  /* Center horizontally */
+  align-items: center;
+  min-height: 0px;
+  position: relative;
+  min-height:50px ;
+}
+header> div#divlogo >h2{
+  font-family:'Quicksand', 'arial';
+  color: aliceblue;
+
+}
+header> div#divlogo  {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-
-img#imglogo{
+header> div#divlogo >img#imglogo{
   width: 50px;
-  height: 50px;
+  height: 48px;
+  margin:5px;
+  border-radius: 10px;
 }
-input{
- 
+header> div#divnav input{
   width: 150px;  
   height: 25px;  
   font-size: 14px; 
   padding: 5px; 
   border: 1px solid #ccc;  
-  border-radius: 4px;
+  border-radius: 10px;
   }
-h2{
-  font-family:'Quicksand' ;
-  color: aliceblue;
+  header> div#divnav{
+    display: flex;
+    justify-content: flex-end;
+  }
+  header> div#divnav input{
+    background-color: #fefdd2;
+    }
+
+
+
+
+nav{
+display: flex;
+justify-content: flex-end;
+color: #ffffff;
+
+
+}
+nav>a{
+  text-decoration: aliceblue;
+  padding: 2px;
+  color: azure;
+  
+}
+nav>a:hover{
+  background-color:var(--brancologo);
+  color: var(--corprincipal);
+  border-radius: 3px;
 }
 
 div#banner{
   background-color: blueviolet;
+  display: flex;
+  justify-content: center;
 }
+
 div#conteudo{
   background-color: rgb(226, 43, 134);
-}
-nav{
-  background-color: var(--corsecundária);
-  justify-content: center; 
-  align-items: center;
-}
-nav>a{
-  color: aliceblue;
-  text-decoration: aliceblue;
-
-}
-nav>a:hover{
-  background-color: chocolate;
-  border-radius: 3px;
-}
+ }
