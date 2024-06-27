@@ -75,7 +75,10 @@ header> div#divnav{
 header> div#divnav input{
     background-color: #f8f8e0;
   }
-
+header div h2 a {
+    text-decoration: none;
+    color: white;
+}
 nav{
 display: flex;
 justify-content: flex-end;
@@ -112,8 +115,6 @@ div>nav>a#alogin:hover{
   font-size: 1.1em;
 }
 
-
-
 div#conteudo{
   background-color: rgb(226, 43, 134);
  }
@@ -126,3 +127,4 @@ background-color: #098ACC;
 footer{
   background-color: #F25E6B;
 }
+
