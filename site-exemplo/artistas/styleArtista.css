@@ -74,13 +74,12 @@ header> div#divnav{
   justify-content: flex-end;
 }
 
-header> div#divnav input{
-    background-color: #f8f8e0;
-  }
+
 header div h2 a {
     text-decoration: none;
     color: white;
 }
+
 nav{
 display: flex;
 justify-content: flex-end;
@@ -95,26 +94,11 @@ nav>a{
   color: azure;
 }
 
-nav>a:hover{
-  background-color:var(--brancologo);
-  color: var(--corprincipal);
-  border-radius: 3px;
-}
-
 div>nav>a:hover{
   font-weight: bold;
-  background-color: var(--corprincipal);
   color: white;
   text-decoration: underline;
-  font-size: 1.1em;
-}
-
-div>nav>a#alogin:hover{
-  font-weight: bold;
-  background-color: var(--corprincipal);
-  color: white;
-  text-decoration: underline;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 div#conteudo{
