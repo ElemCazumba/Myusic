@@ -23,7 +23,7 @@ fonte handwrit - Playwrite Netherland
   padding: 0;
   margin: 0;
 }
-body{
+main{
   max-width: 1000px;
   min-width: 300px;
   margin: auto;
@@ -31,14 +31,16 @@ body{
 }
 
 header{
-  background-color: var(--corprincipal);
+  background-image: linear-gradient(to bottom, var(--corsecundária), var(--corprincipal) );
   display: flex;
   justify-content: space-between;  /* Center horizontally */
   align-items: center;
   min-height: 0px;
   position: relative;
-  min-height:50px ;
+  min-height:70px ;
+  box-shadow: 1px 1px 5px 2px #8389906a;
 }
+
 header> div#divlogo >h2{
   font-family:'Quicksand', 'arial';
   color: aliceblue;
@@ -82,6 +84,7 @@ justify-content: flex-end;
 color: #ffffff;
 font-family: 'Nunito';
 font-size: 13px;
+
 }
 
 nav>a{
@@ -91,28 +94,16 @@ nav>a{
 }
 
 nav>a:hover{
-  background-color:var(--brancologo);
   color: var(--corprincipal);
   border-radius: 3px;
 }
 
 div>nav>a:hover{
   font-weight: bold;
-  background-color: var(--corprincipal);
   color: white;
   text-decoration: underline;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
-
-div>nav>a#alogin:hover{
-  font-weight: bold;
-  background-color: var(--corprincipal);
-  color: white;
-  text-decoration: underline;
-  font-size: 1.1em;
-}
-
-
 
 div#conteudo{
   background-color: rgb(226, 43, 134);

@@ -40,6 +40,7 @@ header{
   min-height:70px ;
   box-shadow: 1px 1px 5px 2px #8389906a;
 }
+
 header> div#divlogo >h2{
   font-family:'Quicksand', 'arial';
   color: aliceblue;
@@ -105,16 +106,10 @@ div>nav>a:hover{
   background-color: var(--corprincipal);
   color: white;
   text-decoration: underline;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
-div>nav>a#alogin:hover{
-  font-weight: bold;
-  background-color: var(--corprincipal);
-  color: white;
-  text-decoration: underline;
-  font-size: 1.1em;
-}
+
 
 div#conteudo{
   background-color: rgb(226, 43, 134);
