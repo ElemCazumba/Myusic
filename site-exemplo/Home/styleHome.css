@@ -18,6 +18,7 @@ fonte handwrit - Playwrite Netherland
   --corsecundária:#098ACC;
   --brancologo:#fdf8e5;
   --cordestaque:#F25E6B;
+  --cordestaque2: #F27F1B;
 }
 *{
   padding: 0;
@@ -58,7 +59,7 @@ header> div#divlogo >img#imglogo{
   border-radius: 10px;
 }
 header> div#divnav input{
-  width: 200px;  
+  
   height: 25px;  
   font-size: 14px; 
   padding: 5px; 
@@ -121,6 +122,32 @@ img#imgBanner{
  padding-top: 2px;
 }
 
+aside{
+  margin-top: auto; /* Empurra o footer para o final da página */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333a4;
+  color: white;
+  padding: 15px;
+ /* Altura do footer */
+  width: 100%; /* Largura total do footer */
+}
+
+aside ul{
+  columns: 2;
+ column-gap: 300px;
+ margin: 5px;
+}
+
 footer{
-  background-color: #F25E6B;
+  margin-top: auto; /* Empurra o footer para o final da página */
+  display: flex;
+  justify-content: space-evenly;
+  align-items:center;
+  background-color: #1a1919c5;
+  color: white;
+  padding: 1px;
+ /* Altura do footer */
+  width: 100%; /* Largura total do footer */
 }
