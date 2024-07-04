@@ -18,99 +18,265 @@ fonte handwrit - Playwrite Netherland
   --corsecundária:#098ACC;
   --brancologo:#fdf8e5;
   --cordestaque:#F25E6B;
+  --cordestaque2: #F27F1B;
 }
 *{
   padding: 0;
   margin: 0;
 }
-main{
-  max-width: 1000px;
-  min-width: 300px;
-  margin: auto;
-  background-color: #ffffff;
-}
 
-header{
-  background-image: linear-gradient(to bottom, var(--corsecundária), var(--corprincipal) );
-  display: flex;
-  justify-content: space-between;  /* Center horizontally */
-  align-items: center;
-  min-height: 0px;
-  position: relative;
-  min-height:70px ;
-  box-shadow: 1px 1px 5px 2px #8389906a;
-}
+@media (min-width: 850px){
 
-header> div#divlogo >h2{
-  font-family:'Quicksand', 'arial';
-  color: aliceblue;
-
-}
-header> div#divlogo  {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header> div#divlogo >img#imglogo{
-  width: 50px;
-  height: 48px;
-  margin:5px;
-  border-radius: 10px;
-}
-header> div#divnav input{
-  width: 200px;  
-  height: 25px;  
-  font-size: 14px; 
-  padding: 5px; 
-  border: 1px solid #ccc;  
-  border-radius: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
-
+  header{
+    background-image: linear-gradient(to bottom, var(--corsecundária), var(--corprincipal) );
+    display: flex;
+    justify-content: space-between;  /* Center horizontally */
+    align-items: center;
+    min-height: 0px;
+    position: relative;
+    min-height:80px ;
+    box-shadow: 1px 1px 5px 2px #8389906a;
+  }
+  
+  header> div#divlogo >h2{
+    font-family:'Quicksand', 'arial';
+    color: aliceblue;
+    margin: 5px;
   }
 
-header> div#divnav{
-  display: flex;
-  justify-content: flex-end;
-}
+  header> div#divlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+  header> div#divlogo >img#imglogo{
+    width: 50px;
+    height: 48px;
+    margin:5px;
+    margin-left: 20px;
+    border-radius: 10px;
+  }
+ 
+  header input {
+    min-width: 250px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid transparent; /* Makes the border transparent */
+    outline: none; /* Removes the default focus outline */
+    margin-left: 10px;
+  }
 
-header div h2 a {
+  header input:focus {
+    background-color: #f1f2f2;
+  }
+
+  header> div#divnav{
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px;
+    margin-right: 20px;
+  }
+
+  header nav a{
+    font-family:'Nunito', 'arial';
+    color: aliceblue;
+    margin: 2px;
+  }
+
+  header nav a:hover{
+    font-family:'Nunito', 'arial';
+    color: aliceblue;
+    margin: 2px;
+    font-weight: bolder;
+    font-size: 1.2em;
+  }
+
+  header h2 a{
+    font-family:'Quicksand', 'arial';
+    color: aliceblue;
+    margin: 2px;
     text-decoration: none;
-    color: white;
+  }
+
+  header nav a#alogin{
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 1.3em;
+  }
+
+  header nav a#alogin:hover{
+    margin: 2px;
+    font-weight: bolder;
+    font-size: 1.5em;
+  }
+
 }
 
-nav{
-display: flex;
-justify-content: flex-end;
-color: #ffffff;
-font-family: 'Nunito';
-font-size: 13px;
+@media (min-width:500px) and (max-width:850px){
+  header{
+    background-image: linear-gradient(to bottom, var(--corsecundária), var(--corprincipal) );
+    position: relative;
+    min-height:70px ;
+    box-shadow: 1px 1px 5px 2px #8389906a;
+  }
+  
+  header> div#divlogo >h2{
+    font-family:'Quicksand', 'arial';
+    color: aliceblue;
+    margin: 5px;
+  }
+
+  header> div#divlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header> div#divlogo >img#imglogo{
+    width: 50px;
+    height: 48px;
+    margin:5px;
+    margin-left: 10px;
+    border-radius: 10px;
+  }
+ 
+  header h2 a{
+    font-family:'Quicksand', 'arial';
+    color: aliceblue;
+    margin: 2px;
+    text-decoration: none;
+  }
+
+  header input {
+    min-width: 250px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid transparent; /* Makes the border transparent */
+    outline: none; /* Removes the default focus outline */
+    margin-left: 10px;
+  }
+
+  header input:focus {
+    background-color: #f1f2f2;
+  }
+
+  header> div#divnav{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    margin-right: 10px;
+  }
+
+  header nav a{
+    font-family:'Nunito', 'arial';
+    color: aliceblue;
+    margin: 2px;
+    font-size: 0.9em;
+  }
+
+  header nav a:hover{
+    font-family:'Nunito', 'arial';
+    color: aliceblue;
+    margin: 2px;
+    font-weight: bolder;
+    font-size: 1em;
+  }
+
+  header nav a#alogin{
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 1.3em;
+  }
+
+  header nav a#alogin:hover{
+    margin: 2px;
+    font-weight: bolder;
+    font-size: 1.5em;
+  }
 }
 
-nav>a{
-  text-decoration: aliceblue;
-  padding: 2px;
-  color: azure;
-}
+@media (max-width: 500px){
+  
+  header{
+    background-image: linear-gradient(to bottom, var(--corsecundária), var(--corprincipal) );
+    position: relative;
+    min-height:70px ;
+    box-shadow: 1px 1px 5px 2px #8389906a;
+  }
+  
+  header> div#divlogo >h2{
+    font-family:'Quicksand', 'arial';
+    color: aliceblue;
+    margin: 5px;
+  }
 
-div>nav>a:hover{
-  font-weight: bold;
-  color: white;
-  text-decoration: underline;
-  font-size: 1.2em;
-}
+  header> div#divlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-div#conteudo{
-  background-color: rgb(226, 43, 134);
- }
-picture{
-  display: flex;
-  justify-content: center;
-  align-content: center;
-background-color: #098ACC;
-}
-footer{
-  background-color: #F25E6B;
-}
+  header> div#divlogo >img#imglogo{
+    width: 50px;
+    height: 48px;
+    margin-top:5px;
+    margin-left: 2px;
+    border-radius: 10px;
+  }
+ 
+  header h2 a{
+    font-family:'Quicksand', 'arial';
+    color: aliceblue;
+    margin: 2px;
+    text-decoration: none;
+  }
+  
+  header input {
+    min-width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid transparent; /* Makes the border transparent */
+    outline: none; /* Removes the default focus outline */
+    margin-left: 5px;
+  }
 
+  header input:focus {
+    background-color: #f1f2f2;
+  }
+
+  header> div#divnav{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    margin-right: 10px;
+  }
+  header nav a{
+    font-family:'Nunito', 'arial';
+    color: aliceblue;
+    margin: 1px;
+    font-size: 0.7em;
+  }
+
+  header nav a:hover{
+    font-family:'Nunito', 'arial';
+    color: aliceblue;
+    margin: 2px;
+    font-weight: bolder;
+    font-size: 0.8em;
+  }
+  header nav a#alogin{
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 0.8em;
+  }
+
+  header nav a#alogin:hover{
+    margin: 2px;
+    font-weight: bolder;
+    font-size: 0.9em;
+  }
+}
