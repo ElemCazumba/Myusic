@@ -25,8 +25,64 @@ fonte handwrit - Playwrite Netherland
   margin: 0;
 }
 
-@media (min-width: 850px){
 
+main{
+  max-width: 80%;
+  margin: auto;
+ }
+
+ #boxcarousel{
+    padding: 5px;
+    box-shadow: 2px 2px 2px 2px #ced0d28c;
+    border-radius: 7px;
+ }
+
+ .carousel {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-item img {
+  width: 100%;
+  display: block;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  cursor: move;
+  z-index: 1;
+  border-radius: 150px;
+}
+
+.carousel-control.prev {
+  left: 5px;
+}
+
+.carousel-control.next {
+  right: 5px;
+}
+
+@media (min-width: 850px){
+  
   header{
     background-image: linear-gradient(to bottom, var(--corsecundária), var(--corprincipal) );
     display: flex;
@@ -34,7 +90,7 @@ fonte handwrit - Playwrite Netherland
     align-items: center;
     min-height: 0px;
     position: relative;
-    min-height:80px ;
+    min-height:100px ;
     box-shadow: 1px 1px 5px 2px #8389906a;
   }
   
@@ -59,17 +115,19 @@ fonte handwrit - Playwrite Netherland
   }
  
   header input {
-    min-width: 250px;
-    height: 25px;
+    min-width: 300px;
+    height: 30px;
     border-radius: 5px;
     border: 1px solid transparent; /* Makes the border transparent */
     outline: none; /* Removes the default focus outline */
     margin-left: 10px;
-  }
+}
 
-  header input:focus {
+header input:focus {
     background-color: #f1f2f2;
-  }
+    box-shadow: 1px 1px 10px 5px  var(--cordestaque2); /* Corrected syntax for box-shadow */
+}
+
 
   header> div#divnav{
     display: flex;
@@ -112,6 +170,16 @@ fonte handwrit - Playwrite Netherland
     font-size: 1.5em;
   }
 
+  div#areabanner{
+  display: flex;
+  flex-direction: row;
+  height: 320px;
+  box-shadow: 1px 1px 5px 1px #b3d5f35a;
+  border-radius: 7px;
+  justify-items: last baseline;
+  
+  }
+ 
 }
 
 @media (min-width:500px) and (max-width:850px){
@@ -160,7 +228,8 @@ fonte handwrit - Playwrite Netherland
 
   header input:focus {
     background-color: #f1f2f2;
-  }
+    box-shadow: 1px 1px 10px 5px  var(--cordestaque2); /* Corrected syntax for box-shadow */
+}
 
   header> div#divnav{
     display: flex;
@@ -198,6 +267,25 @@ fonte handwrit - Playwrite Netherland
   }
 }
 
+div#carrosel_banner{
+  display: flex;
+  flex-wrap: wrap;
+  height: 290px;
+  box-shadow: 1px 1px 5px 1px #b3d5f35a;
+  border-radius: 7px;
+  justify-items: last baseline;
+  
+  }
+  
+  div.banner{
+    height: 240px;
+    width: 30px;
+  background-color: #ababed;
+  margin: 5px;
+  padding: 2px;
+  border-radius: 7px; 
+  }
+  
 @media (max-width: 500px){
   
   header{
@@ -233,7 +321,6 @@ fonte handwrit - Playwrite Netherland
     margin: 2px;
     text-decoration: none;
   }
-  
   header input {
     min-width: 100px;
     height: 25px;
@@ -241,11 +328,12 @@ fonte handwrit - Playwrite Netherland
     border: 1px solid transparent; /* Makes the border transparent */
     outline: none; /* Removes the default focus outline */
     margin-left: 5px;
-  }
+}
 
-  header input:focus {
+header input:focus {
     background-color: #f1f2f2;
-  }
+    box-shadow: 1px 1px 10px 5px  var(--cordestaque2); /* Corrected syntax for box-shadow */
+}
 
   header> div#divnav{
     display: flex;

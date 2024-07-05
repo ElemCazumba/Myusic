@@ -25,8 +25,13 @@ fonte handwrit - Playwrite Netherland
   margin: 0;
 }
 
-@media (min-width: 850px){
+main{
+  max-width: 80%;
+  margin: auto;
+ }
 
+@media (min-width: 850px){
+  
   header{
     background-image: linear-gradient(to bottom, var(--corsecundária), var(--corprincipal) );
     display: flex;
@@ -34,7 +39,7 @@ fonte handwrit - Playwrite Netherland
     align-items: center;
     min-height: 0px;
     position: relative;
-    min-height:80px ;
+    min-height:100px ;
     box-shadow: 1px 1px 5px 2px #8389906a;
   }
   
@@ -59,17 +64,19 @@ fonte handwrit - Playwrite Netherland
   }
  
   header input {
-    min-width: 250px;
-    height: 25px;
+    min-width: 300px;
+    height: 30px;
     border-radius: 5px;
     border: 1px solid transparent; /* Makes the border transparent */
     outline: none; /* Removes the default focus outline */
     margin-left: 10px;
-  }
+}
 
-  header input:focus {
+header input:focus {
     background-color: #f1f2f2;
-  }
+    box-shadow: 1px 1px 10px 5px  var(--cordestaque2); /* Corrected syntax for box-shadow */
+}
+
 
   header> div#divnav{
     display: flex;
@@ -112,6 +119,12 @@ fonte handwrit - Playwrite Netherland
     font-size: 1.5em;
   }
 
+  
+
+  div#banners{
+    height: 360px;
+  background-color: #F25E6B;
+  }
 }
 
 @media (min-width:500px) and (max-width:850px){
@@ -160,7 +173,8 @@ fonte handwrit - Playwrite Netherland
 
   header input:focus {
     background-color: #f1f2f2;
-  }
+    box-shadow: 1px 1px 10px 5px  var(--cordestaque2); /* Corrected syntax for box-shadow */
+}
 
   header> div#divnav{
     display: flex;
@@ -233,7 +247,6 @@ fonte handwrit - Playwrite Netherland
     margin: 2px;
     text-decoration: none;
   }
-  
   header input {
     min-width: 100px;
     height: 25px;
@@ -241,11 +254,12 @@ fonte handwrit - Playwrite Netherland
     border: 1px solid transparent; /* Makes the border transparent */
     outline: none; /* Removes the default focus outline */
     margin-left: 5px;
-  }
+}
 
-  header input:focus {
+header input:focus {
     background-color: #f1f2f2;
-  }
+    box-shadow: 1px 1px 10px 5px  var(--cordestaque2); /* Corrected syntax for box-shadow */
+}
 
   header> div#divnav{
     display: flex;
