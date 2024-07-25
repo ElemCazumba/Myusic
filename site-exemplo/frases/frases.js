@@ -1,10 +1,15 @@
-function inserir() {
-    var frase = document.getElementById('txt1');
-    var new_frase = frase.value;
-    
-    var p = document.createElement('p');
-    p.innerText = new_frase;
-    
-    var mainContent = document.getElementById('mainContent');
-    mainContent.appendChild(p);
-}
+let frases = [
+    {
+        conteúdo: 'Desenhei você no braço pra levar seu amor sempre comigo aonde quer que eu vá...',
+        música: 'Como um abraço',
+        cantor: 'Saulo Fernandes'
+    },
+    {
+        conteúdo: 'Amor em queda - mesmo tal moeda perde cotação',
+        música: 'Solitude',
+        cantor:'Djavan'
+
+    }
+]
+
+console.log(frases[0].cantor)
